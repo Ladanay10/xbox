@@ -1,0 +1,41 @@
+.advantages {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	/* padding: 0 120px; */
+	padding-bottom: 100px;
+	gap: 90px;
+}
+
+.advantages-item {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	flex-direction: column;
+}
+
+.advantages-item:nth-child(3) {
+	gap: 10px;
+}
+
+.advantages-item:nth-child(4) {
+	gap: 23px;
+}
+
+.advantages-item>span {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 150%;
+	/* identical to box height, or 34px */
+
+	letter-spacing: -0.03em;
+
+	color: #818181;
+}
+
+@media screen and (max-width:768px) {
+	.advantages {
+		flex-wrap: wrap;
+		gap: 35px;
+	}
+}
