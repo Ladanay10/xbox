@@ -10,7 +10,7 @@ export const Browse = () => {
 				<h1 className="browse-title">The fastest and the most powerful console xbox for the <span>entire history</span></h1>
 				<div className="browse-img">
 					<img src={img1} alt="" />
-					<motion.div whileInView={{top: '9rem'}} initial={{top:'2rem'}} transition={transition} className="browse-img__content">
+					<motion.div transition={transition} className="browse-img__content">
 						<h3 >Power you
 							dreams</h3>
 						<span>From future adventures, to current obsessions, to classic titles, thousands of favorites across four generations of Xbox look and play best on Xbox Series X.</span>

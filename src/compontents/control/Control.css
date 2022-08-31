@@ -34,8 +34,10 @@
 	display: flex;
 	gap: 18px;
 }
-.control-block > img {
-	object-fit: cover;
+.control-l > img {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
 }
 .control-l {
 	display: flex;
@@ -47,6 +49,11 @@
 	display: flex;
 	flex-direction: column;
 	gap: 18px;
+}
+.control-r > img {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
 }
 .control-r__content {
 	padding: 85px;
@@ -82,6 +89,8 @@
 	
 	.control-r {
 		padding-top: 20px;
+		width: 100%;
+		height: 100%;
 	}
 	.control-text > h3 {
 		font-size: 70px;
@@ -97,9 +106,12 @@
 		right: 0;
 	}
 	.control-r__content {
+		width: 100%;
+		height: 100%;
 		text-align: center;
+		padding: 20px;
 		align-items: center;
-		padding: 20px 120px;
+		/* padding: 20px 120px; */
 	}
 	.control-r__content > h3 {
 		font-size: 40px;
@@ -108,5 +120,15 @@
 	.control-r__content > p {
 		font-size: 18px;
 		padding: 0 40px;
+	}
+	.control-r__content > img {
+		object-fit: contain;
+		width: 100%;
+		height: 100%;
+	}
+}
+@media screen and (max-width:768px) {
+	.control-text > h3 {
+		font-size: 50px;
 	}
 }

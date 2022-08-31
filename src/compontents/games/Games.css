@@ -84,8 +84,15 @@
 	.games-r > img:nth-child(1) {
 		transform: scale(0.9);
 	}
+	.games-r > img:nth-child(2) {
+		display: none;
+	}
+	.games-r > img:nth-child(3) {
+		display: none;
+	}
 	.games {
 		margin-top: 30px;
 		padding-top: 50px;
+		padding-bottom: 30px;
 	}
 }
