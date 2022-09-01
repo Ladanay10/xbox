@@ -74,12 +74,12 @@
 		top: 50px;
 		z-index: 99;
 		cursor: pointer;
-		transform: translateX(150%);
+		transform: translateY(-150%);
 		border-radius: 16px;
 		transition: 0.7s;
 	}
 	.animate {
-		transform: translateX(0);
+		transform: translateY(0);
 		transition: 0.7s;
 	}
 	.header-nav__links {

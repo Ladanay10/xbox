@@ -102,7 +102,7 @@
 	
 	
 }
-@media screen and (max-width:1050px) { 
+@media screen and (max-width:860px) { 
 	.control-text > span {
 		max-width: none;
 		text-align: center;
@@ -133,5 +133,11 @@
 @media screen and (max-width:768px) {
 	.control-text > h3 {
 		font-size: 50px;
+	}
+	.control-l {
+		gap: 210px;
+	}
+	.control-r {
+		padding-top: 0;
 	}
 }

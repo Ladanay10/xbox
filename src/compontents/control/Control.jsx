@@ -7,6 +7,7 @@ import img4 from '../../assets/control4.png';
 import {motion} from 'framer-motion';
 export const Control = () => {
 	const transition ={type: 'spring', duration: 3};
+	const mobile = window.innerWidth<=768 ? true : false
 	return (
 		<>
 			<section className="control">
@@ -18,7 +19,7 @@ export const Control = () => {
 					<div className="control-block">
 						<div className="control-l">
 							<motion.img whileInView={{x:0}} initial={{x:-20}} transition={transition} src={img1} alt="" />
-							<motion.img whileInView={{y:0}} initial={{y:20}} transition={transition} src={img2} alt="" />
+							<motion.img whileInView={{y:0}} initial={{y: 20 }} transition={transition} src={img2} alt="" />
 						</div>
 						<div className="control-r">
 							<motion.img whileInView={{x:0}} initial={{x:20}} transition={transition} src={img3} alt="" />

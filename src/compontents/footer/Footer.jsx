@@ -10,10 +10,10 @@ export const Footer = () => {
 		<>
 			<footer className='container'>
 				<div className='footer '>
-					<Link to='/' className="footer-logo">
+					<Link to='header'smooth className="footer-logo">
 						<img src={logo} alt="" />
 					</Link>
-
+					
 
 					<div className="footer-links">
 						<Link to='browse' smooth href="">Browse</Link>
