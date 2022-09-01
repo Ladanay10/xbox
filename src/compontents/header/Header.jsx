@@ -6,7 +6,6 @@ import {IoCloseSharp} from 'react-icons/io5';
 import { Link } from 'react-scroll';
 export const Header = () => {
 	const [click, setClick] = useState(false);	
-	const [animate, setAnimate] = useState(false);	
   return (	
 	<>
 		<header className='container header'>
@@ -14,7 +13,7 @@ export const Header = () => {
 				<img src={logo} alt="" />
 			</div>
 			
-			<nav className={click ? 'header-nav__mobile animate' : 'header-nav__mobile '}>
+			<nav className={click ? 'header-nav__mobile animate' : ' header-nav header-nav__mobile'}>
 				<div className="header-nav__links">
 						<Link to='browse' smooth href="">Browse</Link>
 						<Link to='games'smooth href="">Games</Link>
