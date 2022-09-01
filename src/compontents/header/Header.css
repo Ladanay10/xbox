@@ -72,12 +72,21 @@
 		position: absolute;
 		right: 20px;
 		top: 50px;
+		z-index: 99;
+		cursor: pointer;
+		transform: translateX(150%);
 		border-radius: 16px;
+		transition: 0.7s;
+	}
+	.animate {
+		transform: translateX(0);
+		transition: 0.7s;
 	}
 	.header-nav__links {
 		flex-direction: column;
 		gap: 20px;
 		padding-bottom: 20px;
+
 	}
 	.header-mobile__btn {
 		display: block;
