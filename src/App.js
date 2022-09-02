@@ -1,24 +1,18 @@
 import './App.css';
-import { Browse } from './compontents/browse/Browse';
-import { Control } from './compontents/control/Control';
-import { Footer } from './compontents/footer/Footer';
-import { Games } from './compontents/games/Games';
 import { Header } from './compontents/header/Header';
-import { HomePage } from './compontents/homePage/HomePage';
-import { Inside } from './compontents/inside/Inside';
-import { Questions } from './compontents/questions/Questions';
-
+import {Routes, Route} from 'react-router-dom';
+import { MainPage } from './compontents/page/MainPage';
+import {OrderPage} from './compontents/page/OrderPage/OrderPage';
 function App() {
   return (
-    <div className="App">
+    <div className="App">	
 		<Header/>
-		<HomePage/>
-		<Browse />
-		<Games/>
-		<Control/>
-		<Inside/>
-		<Questions/>
-		<Footer/>
+			<Routes>
+				<Route path='/' element={<MainPage/>}/>
+				<Route path='/order' element={<OrderPage/>}/>
+			</Routes>
+		
+		
     </div>
   );
 }
